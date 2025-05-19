@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <div class="app-header">
+                <h2>To Do List</h2>
+                <img src="images/todoicon.png" alt="todo icon">
+            </div>
+
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your task">
+                <button id="add-button">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+
+            <div class="filters">
+                <div class="filter-option active" data-filter="all">All</div>
+                <div class="filter-option" data-filter="pending">Pending</div>
+                <div class="filter-option" data-filter="completed">Completed</div>
+            </div>
+
+            <ul id="list-container">
+                <!-- Tasks will be added here -->
+            </ul>
+
+            <div class="clear-all">
+                <button id="clear-all-btn">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
